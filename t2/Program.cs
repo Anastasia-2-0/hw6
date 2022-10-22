@@ -14,7 +14,15 @@ float k2 = int.Parse(Console.ReadLine());
 float Spotx = 0;
 float Spoty = 0;
 
-Spotx = ((b2 - b1) / (k1 - k2));
-Spoty = (k1 * ((b2 - b1) / (k1 - k2)) + b1);
+if(k1 == k2)
+{
+    Console.WriteLine("прямыe параллельны");
+}
+else
+{
+    Spotx = ((b2 - b1) / (k1 - k2));
+    Spoty = (k1 * ((b2 - b1) / (k1 - k2)) + b1);
 
-Console.WriteLine($"Точка персечения прямых ({Spotx};{Spoty})");
+    Console.WriteLine($"Точка персечения прямых ({Spotx};{Spoty})");
+}
+
